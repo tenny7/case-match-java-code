@@ -21,18 +21,7 @@ import java.util.*;
 public class Login {
     private String loginUrl ="https://case-match-api.azurewebsites.net/api/login";
     Controller controller = new Controller();
-//    public String username;
-//    public String password;
-
-//    public Login(String user, String pass){
-//        this.password = pass;
-//        this.username = user;
-//    }
     public void authenticate(String email, String password) throws IOException {
-
-//        Map<String,String> parameters = new HashMap<>();
-//            parameters.put("email", email);
-//            parameters.put("password",password);
         String urlParameters = "email=" + email + "";
 
         URL UrlObj = new URL(loginUrl);
